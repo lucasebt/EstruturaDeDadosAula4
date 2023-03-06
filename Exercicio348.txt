@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Exercicio348 {
+
+    public static void main(String args[]){
+        float operador1[5], int operador2[5], int media[5]; //Simulando os 5 alunos...
+	String alunos = new String[5];
+	Scanner entrada = new Scanner(System.in);
+	for(int i=1; i <= 5; i++){
+	System.out.println("Digite os nomes: "+i+1);
+	alunos = entrada.nextString();
+	System.out.println("Digite a primeira nota");
+	operador1 = entrada.nextFloat();
+	System.out.println("Digite a segunda nota");
+	operador2 = entrada.nextFloat();
+
+	media = ((operador1 + operador2 /2));
+	
+	System.out.println("Nomes: " +alunos "\n" + "Notas: " + operador1 +"\n" + operador2 +"\n" + "A Média é: " +media);
+	
+	
+}
+
+
+}

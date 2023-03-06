@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Exercicio351 {
+
+    public static void main(String args[]){
+       	int contador = nome.lenght;
+	Scanner entrada = new Scanner(System.in);
+	System.out.println("Digite"+"\n" + "Numeros correspondentes aos nomes: "+ +"\n"+ "1° Anita"+"\n"+ "2° Guto"+"\n"+ "3° Joao"+"\n"+ "4° Pedro"+"\n"+ "5° Felipe");
+	contador = entrada.nextInt();
+	String nome[] = {"Anita", "Guto", "Joao", "Pedro", "Felipe"};
+	int numerosNomes[] = {1, 2, 3, 4};
+	for(int i=0; i <= 4; i++){
+	contador = ((i));
+	
+	System.out.println("Numero: " +contador"\n" + "Nome: " + nome[i]);
+
+}
+}

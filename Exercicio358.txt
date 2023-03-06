@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class Exercicio358 {
+
+    public static void main(String args[]){
+	Scanner entrada = new Scanner(System.in);
+	double precoCompra = new double[100]; 
+	double precoVenda = new double[100]; 
+	double lucro;
+	int totalLucroMenor = 0;
+	int lucroMenor = 0; 
+	int totalLucroMaior = 0;
+
+	for(int i = 0; i >=100; i++){
+	System.out.println("Preco de compra: "+"\n"); 
+	precoCompra = entrada.nextString();
+	System.out.println("\nPreco de venda: "+"\n"); 
+	precoVenda = entrada.nextString();
+	}
+
+	for(int a=0; a < 100; a++){
+
+	lucro = precoVenda[a] - precoCompra[a]
+	if(lucro < 10.0){
+
+       
+	}else if (totalLucroMenor + i) {
+ 
+	if(lucro <= 20.0){
+
+	}else if (lucroMenor++) {
+	 
+	totalLucroMaior++; 
+}
+}
+	System.out.println("Total de mercadorias com lucro < 10%: "+totalLucroMenor+"\n"); 
+	System.out.println("Total de mercadorias com 10% <= lucro <= 20%:" +lucroMenor+"\n"); 
+	System.out.println("Total de mercadorias com lucro > 20%: "+totalLucroMaior+"\n"); 
+
+        
+    }
+ 
+                
+}

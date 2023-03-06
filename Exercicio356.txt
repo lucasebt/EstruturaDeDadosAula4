@@ -1,0 +1,50 @@
+import java.util.Scanner;
+public class Exercicio356 {
+
+    public static void main(String args[]){
+	Scanner entrada = new Scanner(System.in);
+        
+	float calculador, media;
+	String nomes = new String[15];
+	String situacao = new String[15];
+	double pr1 = new double[15]; 
+	double pr2 = new double[15]; 
+
+	for(int i= O; i <= 14 ; i++){
+
+	System.out.println("Digite ", i + 1, " nome: " "\n");
+	nomes = entrada.nextString();
+	while( tamanho(nomes[i]) >30){
+	System.out.println("Nomes com ate 30 caracteres");
+	System.out.println("Digite " + "\n", i + 1" nome: " +"\n");
+	nomes = entrada.nextString();
+}
+
+	calculador = (30 - tamanho(nomes[i]));
+
+	for(int x=1; x <= calculador; x++){
+	nomes[i]=somaCalculador(nomes[i]+ "");
+}
+	System.out.println("Digite a 1° nota: "+ "\n");
+
+	prl = entrada.nextString();
+	System.out.println("Digite a 2° nota: "+ "\n");
+	
+	pr2 = entrada.nextString();
+	media[i] = soma((pr1[i] + pr2[i])12+0.0001);
+	
+	if(media[i] >= 5 ){ 
+	situacao[i]  = "Aprovado"; 
+
+	}else {
+	situacao[i] = "Reprovado"; 
+}
+}
+
+	System.out.println( "RELACAO FINAL" +"\n";
+	for(int c = 0; c <= 14 ; c++){
+ 	System.out.println(c+1="-" +nomes[i]+"\n" +prl[i]+"\n"+" +pr2[i]+"\n" +media[i]+"\n" +situacao[i]); 
+
+
+}
+}

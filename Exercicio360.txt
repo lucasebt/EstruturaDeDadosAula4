@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class Exercicio360 {
+
+    public static void main(String args[]){
+	Scanner entrada = new Scanner(System.in);
+
+	int ultimoDia = new int [12]
+	int data, dia, mes;
+	String signo = new String[12];
+
+	for (int i= 0; i< 12; i++){
+	System.out.println( "Digite o Signo: "+"\n");
+	signo = entrada.nextString();
+	System.out.println( "Digite ultimo dia: "+"\n");
+	ultimoDia = entrada.nextInt();
+	}
+	System.out.println( "Digite a data no formato ddmm ou 9999 para terminar: "+"\n");
+	data= entrada.nextInt();
+	while( data < > 9999){
+	dia = ((data / 100));
+	mes = ((data % 100));
+	mes--;
+	
+	if( dia > ultimoDia (mes) ){
+	mes = ((mes+ 1 % 12)); 
+	}
+	System.out.println( "Signo: "+signo(mes)+ "\n");
+	System.out.println( "Digite a data no formato ddmm ou 9999 para terminar: "+"\n");
+	data = entrada.nextInt();
+
+	}
+    }
+ 
+                
+}
+
+
+
+
+
+
+
+
+

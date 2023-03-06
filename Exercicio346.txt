@@ -1,0 +1,63 @@
+import java.util.Scanner;
+public class Exercicio346 {
+
+    public static void main(String args[]){
+	Scanner entrada = new Scanner(System.in);
+     
+    	String frase;
+     	int operador, valor, tamanho; 
+     
+	do{
+	System.out.println("Menu:");
+	System.out.println("Aperte o 1 para ver o compromento da frase" + "\n");
+	System.out.println("Aperte o 2 para ver dois primeiros e os dois ultimos caracteres da frase ou palavra"+ "\n");
+	System.out.println("Aperte o 3 para ver a frase espelhada"+ "\n");
+	System.out.println("Aperte o 4 para encerrar o algoritmo + "\n");
+    
+       operador = entrada.nextInt();
+       
+       if (operador == 1) {
+           
+             System.out.println("Digite uma frase: "+ "\n");
+             frase = entrada.nextString();
+             System.out.println("Numero de caracteres da frase: "+ "\n" +(frase));
+	} else {
+           
+           if (operador == 2){
+               
+               System.out.println("Digite uma frase: " + "\n");
+               frase = entrada.nextString();
+               System.out.println("Os dois primeiros caracteres: "+ "\n" + (frase+2));
+               tamanho = fraseTamanho((frase - 2)) ;
+               System.out.println("Os dois ultimos caracteres: " + "\n" + (frase+tamanho));
+	}
+               
+	} else {
+               if (operador == 3){
+                   
+                System.out.println("Digite uma frase: "+ "\n");
+                frase = entrada.nextString();
+                for (x = fraseTamanho(frase) -1; x >=O; x--){
+                System.out.println(fraseLer(frase+x));
+	
+               
+            }   
+           
+	}else {
+              if(operador == 4) {
+                
+		System.out.println("Fim do algoritmo "+ "\n");
+           
+	} else {
+            	System.out.println( "Opcao nao disponivel" + "\n");
+	
+	}
+                    }
+       
+   } while (operador >= 4)
+   
+ 	
+        }
+    }
+
+}
